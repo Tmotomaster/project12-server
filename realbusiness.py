@@ -151,7 +151,7 @@ def startlogic():
         # print(plr.getShooting())
         # print(plr, plr.getShooting())
         time.sleep(0.001) # Sleep to prevent CPU with python GIL black magic schenanigans
-        if plr.getShooting() and (now - plr.getLastShot() >= SHOOT_CD):
+        if plr.getShooting() and (now - plr.getLastShot() >= SHOOT_CD) and plr.getHp() > 0:
           xmod = math.cos(math.radians(plr.getRotation()))
           ymod = math.sin(math.radians(plr.getRotation()))
           newId = 0
