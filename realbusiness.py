@@ -10,7 +10,7 @@ from classes import *
 UDP_IP = "0.0.0.0"
 UDP_PORT = 13377
 
-SERVER_LEVEL = 0 # Current server version
+SERVER_LEVEL = 1 # Current server version
 
 # Game settings
 SHOOT_HITRAD = 75
